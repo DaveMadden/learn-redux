@@ -1,7 +1,8 @@
-export const increment = () => {
-    console.log("in increment action")
+export const increment = (num) => {
+    console.log("in increment action", num)
     return {
-        type: 'INCREMENT'
+        type: 'INCREMENT',
+        payload: num
     }
 }
 export const decrement = () => {
